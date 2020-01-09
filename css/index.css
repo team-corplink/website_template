@@ -55,6 +55,12 @@ html, body {
     position: relative;
 }
 
+#wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 #header {
     width: 100%;
     height: 50px;
@@ -63,15 +69,14 @@ html, body {
 
 #container {
     background-color: honeydew;
+    margin: 0 auto;
+    position: relative;
     width: 100%;
-    height: 1000px;
+    flex: 1;
 }
 
 #footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    background-color: darkseagreen;
     width: 100%;
     height: 50px;
-    background-color: darkseagreen;
 }
