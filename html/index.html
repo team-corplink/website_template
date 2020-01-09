@@ -13,27 +13,88 @@
      <link rel="icon" sizes="16x16" href="./images/favicon.png">-->
     <title>Website template</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <div id="wrap">
     <!-- header -->
-    <div id="header">
-        header
-    </div>
-    <!-- //header -->
+    <header id="header">
+        <div class="header__area area--1200">
+            <!-- Logo -->
+            <div class="header__logo">
+                <a href="#"><img src="https://via.placeholder.com/160x60"/></a>
+            </div>
+            <!-- Nav -->
+            <div class="header__contents">
+                <nav class="header__nav">
+                    <ul class="header__gnb">
+                        <li><a href="#">List01</a></li>
+                        <li><a href="#">List02</a></li>
+                        <li><a href="#">List03</a></li>
+                        <li><a href="#">List04</a>
+                            <ul class="header__lnb">
+                                <li><a href="#">Sub01</a></li>
+                                <li><a href="#">Sub02</a></li>
+                                <li><a href="#">Sub03</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__utils">
+                    <a href="#">SignIn</a>
+                    <a href="#">SignUp</a>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- container -->
     <div id="container">
-        container
-        <div class="test"></div>
+        <div class="container__area area--1500">
+            <section>
+                <h2>INPUT</h2>
+                <br>
+                <!-- text -->
+                <input type="text" class="inp-text" placeholder="example Text">
+                <br><br>
+                <!-- checkbox -->
+                <input type="checkbox" id="exChk" class="inp-check">
+                <label for="exChk" class="lab-check">Checkbox Test</label>
+                <br><br>
+                <!-- radio -->
+                <input type="radio" class="inp-radio" name="ex_radio" id="exRadio01">
+                <label for="exRadio01" class="lab-radio">Male</label>
+                <input type="radio" class="inp-radio" name="ex_radio" id="exRadio02">
+                <label for="exRadio02" class="lab-radio">FeMale</label>
+                <br><br>
+                <!-- file -->
+                <input type="file">
+                <br><br>
+                <!-- textarea -->
+                <textarea class="tf-common"></textarea>
+            </section>
+            <section>
+                <h2>BUTTON</h2>
+                <br>
+                <button type="button" class="btn-common">BUTTON</button>
+            </section>
+            <section>
+                <h2>SELECT BOX</h2>
+                <br>
+                <select class="opt-common">
+                    <option>집에가고싶다</option>
+                    <option>너두?</option>
+                    <option>야,나두</option>
+                </select>
+            </section>
+        </div>
     </div>
-    <!-- //container -->
     <!-- footer -->
-    <div id="footer">
-        footer
-    </div>
-    <!-- //footer -->
+    <footer id="footer">
+        <div class="footer__area area--1500">
+            ss
+        </div>
+    </footer>
 </div>
 </body>
 </html>
